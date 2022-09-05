@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        let NumeroLados =parseInt(prompt("Digite o Numero de lados do Polígono: "))
+        let CMLados =parseInt(prompt("Digite quanto cm os tem os lados do Polígono: "))
+        let perimetro = CMLados*3
+        let area = CMLados*CMLados
+
+        if(NumeroLados==3){
+            document.write("Esse poligono é um triangulo, o perimetro desse triangulo é de : " + perimetro+"cm³")
+        }else if(NumeroLados==4){
+            document.write("Esse poligono é um quadrado, a área desse quadrado é de :" + area +"cm²")
+        }else if(NumeroLados==5){
+            document.write("Esse poligono é um Pentágono")
+        }else if(NumeroLados<3){
+            document.write("NÃO É UM POLÍGONO")
+        }else{
+            document.write("POLÍGONO NÃO IDENTIFICADO")
+        }
+    </Script>
+</body>
+</html>
